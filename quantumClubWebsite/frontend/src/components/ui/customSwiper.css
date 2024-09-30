@@ -1,0 +1,23 @@
+.swiper-button-next,
+.swiper-button-prev {
+  height: 30px;
+  width: 30px;
+  color: #fafafa;
+  background-color: #fafafa10;
+  border-radius: 100px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fafafa70;
+  transition: 0.5s;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fafafa;
+  transition: 0.5s;
+}
