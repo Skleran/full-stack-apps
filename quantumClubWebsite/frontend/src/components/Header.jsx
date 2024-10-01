@@ -5,6 +5,7 @@ import Container from './ui/container'
 import { Button } from './ui/button'
 import { Menu, Moon, Sun, AtomIcon } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const { theme, setTheme } = useTheme()
@@ -20,7 +21,7 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="left">
                 <nav className="flex flex-col gap-4 pl-6 pt-5">
-                  <a href="">Announcements</a>
+                  <Link to="/full-stack-apps/announcements">Announcements</Link>
                   <a href="">Events</a>
                   <a href="">Team</a>
                   <a href="">About Us</a>

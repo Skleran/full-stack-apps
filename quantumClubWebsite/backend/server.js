@@ -16,11 +16,26 @@ db.once("open", () => {
   console.log("Connected to MongoDB");
 });
 
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://skleran.github.io/full-stack-apps/",
+];
+
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+
+app.options("*", cors()); // Preflight handling
 
 app.use(express.json());
 
