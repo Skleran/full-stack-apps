@@ -1,18 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: [
-    './src/App.jsx',
-    './src/components/ui/*.{js,jsx}',
-    './src/components/*.{js,jsx}',
-    './src/components/Header.jsx',
-    './src/components/ui/body/*.{js,jsx}',
-  ],
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        geist: ['Geist'],
-      },
+      // fontFamily: {
+      //   geist: ['Geist'],
+      // },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',

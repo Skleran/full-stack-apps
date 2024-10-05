@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { useTheme } from 'next-themes'
 import Container from './ui/container'
@@ -7,11 +6,11 @@ import { Menu, Moon, Sun, AtomIcon } from 'lucide-react'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Navbar = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <header className="sticky top-0 z-50 flex h-14 items-center border-b border-black border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:flex sm:justify-between">
+    <nav className="sticky top-0 z-50 flex h-14 items-center border-b border-black border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:flex sm:justify-between">
       <Container>
         <div className="relative flex w-full items-center justify-between">
           <div className="flex items-center justify-between gap-3">
@@ -21,6 +20,7 @@ const Header = () => {
               </SheetTrigger>
               <SheetContent side="left">
                 <nav className="flex flex-col gap-4 pl-6 pt-5">
+                  <Link to="/full-stack-apps/roadmap">Roadmap</Link>
                   <Link to="/full-stack-apps/announcements">Announcements</Link>
                   <a href="">Events</a>
                   <a href="">Team</a>
@@ -29,10 +29,13 @@ const Header = () => {
               </SheetContent>
             </Sheet>
           </div>
-          <a href="" className="flex flex-row gap-1 md:absolute">
+          <Link
+            to="/full-stack-apps/"
+            className="flex flex-row gap-1 md:absolute"
+          >
             <AtomIcon className="h-6 w-6" />
             <div className="font-medium">Quantum Club</div>
-          </a>
+          </Link>
           <nav className="text-g ml-6 hidden flex-row gap-12 md:flex lg:gap-16">
             <a
               href=""
@@ -73,8 +76,8 @@ const Header = () => {
           </div>
         </div>
       </Container>
-    </header>
+    </nav>
   )
 }
 
-export default Header
+export default Navbar

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -65,7 +66,7 @@
   }
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Geist';
   src: url('./assets/fonts/Geist-Regular.ttf');
-}
+} */
