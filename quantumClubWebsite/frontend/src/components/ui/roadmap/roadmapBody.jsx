@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../button'
+import { Link } from 'react-router-dom'
 
 const roadmapBody = () => {
   return (
@@ -22,7 +23,9 @@ const roadmapBody = () => {
             sadece kuantum fiziğine değinen popüler dizi, film ve kitaplara yer
             veriyoruz.
           </p>
-          <Button className="font-bold">Take me there!</Button>
+          <Link to={'/full-stack-apps/checkpoint-1'}>
+            <Button className="w-full font-bold">Take me there!</Button>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-4 rounded-lg border bg-blue-200 p-3 shadow-lg dark:bg-blue-950">
