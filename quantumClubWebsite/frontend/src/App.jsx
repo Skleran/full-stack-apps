@@ -4,11 +4,14 @@ import AnnouncementsPage from './pages/AnnouncementsPage'
 import Navbar from './components/Navbar'
 import RoadmapMainPage from './pages/RoadmapMainPage'
 import RMCheckpoint1 from './pages/roadmaps/RMCheckpoint1'
+import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/full-stack-apps/" element={<HomePage />} />
@@ -25,6 +28,7 @@ function App() {
             element={<RMCheckpoint1 />}
           />
         </Routes>
+        <Footer />
       </Router>
     </>
   )

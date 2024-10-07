@@ -3,6 +3,7 @@ import VerticalCarousel from './ui/body/verticalCarousel'
 import Container from './ui/container'
 import { Target } from 'lucide-react'
 import JoinUs from './ui/body/JoinUs'
+import HomeRoadmap from './ui/HomeRoadmap'
 
 const HomeBody = () => {
   return (
@@ -30,6 +31,7 @@ const HomeBody = () => {
           </div>
         </div>
       </div>
+      <HomeRoadmap />
       <VerticalCarousel />
       <JoinUs />
     </Container>
