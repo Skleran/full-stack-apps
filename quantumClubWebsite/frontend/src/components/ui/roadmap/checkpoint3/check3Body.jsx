@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { MonitorPlay, Clapperboard, BookText } from 'lucide-react'
+import { MonitorPlay, Clapperboard } from 'lucide-react'
 import 'swiper/css'
 import {
   Accordion,
@@ -27,7 +27,7 @@ const movieContent = moviesContent
 const serieContent = seriesContent
 const bookContent = booksContent
 
-const check1Body = () => {
+const check3Body = () => {
   return (
     <>
       <motion.div
@@ -48,7 +48,7 @@ const check1Body = () => {
                   </h1>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  <p className="text-sm text-neutral-400">
                     Not: Daha iyi bir öğrenme için aşağıdaki önerilerden en az
                     birini izlemeniz gerekmektedir.
                   </p>
@@ -80,7 +80,7 @@ const check1Body = () => {
                         <DrawerTitle>{content.title}</DrawerTitle>
                         <DrawerDescription>
                           {content.description}
-                          <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
+                          <h1 className="my-2 mt-4 text-base text-neutral-50">
                             Kuantumla Alakası:
                           </h1>
                           {content.quantumRelevence.length > 0 && (
@@ -105,12 +105,12 @@ const check1Body = () => {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="py-3">
                   <h1 className="flex flex-row items-center gap-2 text-left text-xl font-semibold">
-                    <Clapperboard />
+                    <MonitorPlay />
                     Film önerileri
                   </h1>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  <p className="text-sm text-neutral-400">
                     Not: Daha iyi bir öğrenme için aşağıdaki önerilerden en az
                     birini izlemeniz gerekmektedir.
                   </p>
@@ -142,10 +142,12 @@ const check1Body = () => {
                         <DrawerTitle>{content.title}</DrawerTitle>
                         <DrawerDescription>
                           {content.description}
-                          <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
-                            Neden İzlenmeli?
-                          </h1>
-                          <p>{content.whyToWatch}</p>
+                        </DrawerDescription>
+                        <h1 className="mt-4 text-base text-neutral-50">
+                          Neden İzlenmeli?
+                        </h1>
+                        <DrawerDescription>
+                          {content.whyToWatch}
                         </DrawerDescription>
                       </DrawerHeader>
                     </div>
@@ -161,12 +163,12 @@ const check1Body = () => {
               <AccordionItem value="item-1">
                 <AccordionTrigger className="py-3">
                   <h1 className="flex flex-row items-center gap-2 text-left text-xl font-semibold">
-                    <BookText />
-                    Kitap önerileri
+                    <MonitorPlay />
+                    Film önerileri
                   </h1>
                 </AccordionTrigger>
                 <AccordionContent>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
+                  <p className="text-sm text-neutral-400">
                     Not: Daha iyi bir öğrenme için aşağıdaki önerilerden en az
                     birini okumanız gerekmektedir.
                   </p>
@@ -197,17 +199,18 @@ const check1Body = () => {
                       <DrawerHeader>
                         <div className="flex flex-col gap-2">
                           <DrawerTitle>{content.title}</DrawerTitle>
-                          <DrawerTitle className="text-neutral-500 dark:text-neutral-400">
+                          <DrawerTitle className="text-neutral-400">
                             {content.author}
                           </DrawerTitle>
                         </div>
-
                         <DrawerDescription>
                           {content.description}
-                          <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
-                            Neden Okunmalı?
-                          </h1>
-                          <p>{content.whyToWatch}</p>
+                        </DrawerDescription>
+                        <h1 className="mt-4 text-base text-neutral-50">
+                          Neden Okunmalı?
+                        </h1>
+                        <DrawerDescription>
+                          {content.whyToWatch}
                         </DrawerDescription>
                       </DrawerHeader>
                     </div>
@@ -222,4 +225,4 @@ const check1Body = () => {
   )
 }
 
-export default check1Body
+export default check3Body

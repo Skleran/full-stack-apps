@@ -1,0 +1,71 @@
+[
+  {
+    "image": "https://img.youtube.com/vi/AZJM-5f2-TA/sddefault.jpg",
+    "title": "Kuantum Fiziğine Giriş",
+    "link": "https://youtu.be/AZJM-5f2-TA?list=PLdbeYAM5mGiQH4UQZGJjghqpx5rrOuuuw",
+    "videoTopics": [
+      "Temel kavramlar: Kuantum nedir?",
+      "Dalga-parçacık ikiliği: Işık hem dalga hem parçacık olarak nasıl davranır?",
+      "Kuantum dünyası ile klasik fizik arasındaki farklar."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/rKQEz5SG2sg/sddefault.jpg",
+    "title": "Her Şeyin Teorisi",
+    "link": "https://youtu.be/rKQEz5SG2sg",
+    "videoTopics": ["Bilgi Teorisi", "Big Bang", "Kuantum Kütle Çeklimi"]
+  },
+  {
+    "image": "https://img.youtube.com/vi/adiL3dFhbJg/sddefault.jpg",
+    "title": "Kuantum Süperpozisyonu",
+    "link": "https://youtu.be/adiL3dFhbJg",
+    "videoTopics": [
+      "Süperpozisyon kavramı: Bir parçacığın aynı anda birden fazla durumda nasıl olabileceği.",
+      "Schrödinger’in Kedisi: Düşünce deneyi."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/BJ0a8n7FJr0/sddefault.jpg",
+    "title": "Kuantum Dolanıklığı",
+    "link": "https://youtu.be/BJ0a8n7FJr0",
+    "videoTopics": [
+      "İki parçacığın birbirine bağlı olma hali.",
+      "EPR Paradoksu: Einstein-Podolsky-Rosen düşünce deneyi.",
+      "Bell Teoremi ve yerel gerçekçilik."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/W5QgaHvSLxc/sddefault.jpg",
+    "title": "Heisenberg Belirsizlik İlkesi",
+    "link": "https://youtu.be/W5QgaHvSLxc",
+    "videoTopics": [
+      "Konum ve momentum arasındaki belirsizlik.",
+      "Kuantum mekaniğinde ölçüm sorunları."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/m7EaVRT7v4I/sddefault.jpg",
+    "title": "Dalga Fonksiyonu ve Schrödinger Denklemi",
+    "link": "https://youtu.be/m7EaVRT7v4I",
+    "videoTopics": [
+      "Dalga fonksiyonu nedir?",
+      "Schrödinger dalga denkleminin tanıtımı.",
+      "Zaman bağımlı ve bağımsız Schrödinger denklemleri."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/A3VU3IOnCY8/sddefault.jpg",
+    "title": "Kuantum Tünelleme",
+    "link": "https://youtu.be/A3VU3IOnCY8",
+    "videoTopics": [
+      "Potansiyel bariyerlerin aşılması: Parçacıkların engelleri geçme olasılığı.",
+      "Tünellemenin teknolojideki kullanımı (ör. tünel diyotları)."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/JIVpsKbmQaE/sddefault.jpg",
+    "title": "Çift Yarık Deneyi",
+    "link": "https://youtu.be/JIVpsKbmQaE",
+    "videoTopics": ["Dalga parçacık ikilemi.", "Gözlemci problemi."]
+  }
+]

@@ -22,12 +22,15 @@ import {
 import moviesContent from './moviesContent.json'
 import seriesContent from './seriesContent.json'
 import booksContent from './booksContent.json'
+import videosContent from './videosContent.json'
+import { Button } from '../../button'
 
 const movieContent = moviesContent
 const serieContent = seriesContent
 const bookContent = booksContent
+const videoContent = videosContent
 
-const check1Body = () => {
+const check2Body = () => {
   return (
     <>
       <motion.div
@@ -37,14 +40,14 @@ const check1Body = () => {
         className="rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900"
       >
         <div className="py-3">
-          {/* Recommended series */}
+          {/* Recommended videos */}
           <div className="px-4">
             <Accordion collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="py-3">
                   <h1 className="flex flex-row items-center gap-2 text-left text-xl font-semibold">
                     <MonitorPlay />
-                    Dizi önerileri
+                    Video önerileri
                   </h1>
                 </AccordionTrigger>
                 <AccordionContent>
@@ -62,34 +65,41 @@ const check1Body = () => {
             slidesPerView={'auto'}
             className="my-2 px-2"
           >
-            {serieContent.map((content, index) => (
+            {videoContent.map((content, index) => (
               <SwiperSlide key={index} className="w-auto rounded-lg">
                 <Drawer>
                   <DrawerTrigger>
-                    <div className="h-40 w-[6.75rem] overflow-hidden rounded-md bg-neutral-700">
+                    <div className="flex aspect-[16/11] h-52 flex-col justify-between overflow-hidden rounded-lg bg-neutral-200 font-semibold dark:bg-neutral-800">
                       <img
                         src={content.image}
                         alt=""
-                        className="h-full w-full overflow-hidden rounded-md object-cover"
+                        className="aspect-[16/9] overflow-hidden object-cover"
                       />
+                      <h1 className="text-md mb-2 overflow-hidden truncate px-3">
+                        {content.title}
+                      </h1>
                     </div>
                   </DrawerTrigger>
                   <DrawerContent>
-                    <div className="mx-auto h-[400px] w-full max-w-sm">
+                    <div className="mx-auto h-[400px]">
                       <DrawerHeader>
                         <DrawerTitle>{content.title}</DrawerTitle>
                         <DrawerDescription>
-                          {content.description}
                           <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
-                            Kuantumla Alakası:
+                            Video Icerigi:
                           </h1>
-                          {content.quantumRelevence.length > 0 && (
+                          {content.videoTopics.length > 0 && (
                             <ul className="mt-2 list-inside list-disc">
-                              {content.quantumRelevence.map((item, idx) => (
+                              {content.videoTopics.map((item, idx) => (
                                 <li key={idx}>{item}</li>
                               ))}
                             </ul>
                           )}
+                          <a href={content.link}>
+                            <Button className="mt-8 w-[80vw] px-16 py-2">
+                              Videoya Git
+                            </Button>
+                          </a>
                         </DrawerDescription>
                       </DrawerHeader>
                     </div>
@@ -142,10 +152,12 @@ const check1Body = () => {
                         <DrawerTitle>{content.title}</DrawerTitle>
                         <DrawerDescription>
                           {content.description}
-                          <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
-                            Neden İzlenmeli?
-                          </h1>
-                          <p>{content.whyToWatch}</p>
+                        </DrawerDescription>
+                        <h1 className="mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
+                          Neden İzlenmeli?
+                        </h1>
+                        <DrawerDescription>
+                          {content.whyToWatch}
                         </DrawerDescription>
                       </DrawerHeader>
                     </div>
@@ -197,17 +209,18 @@ const check1Body = () => {
                       <DrawerHeader>
                         <div className="flex flex-col gap-2">
                           <DrawerTitle>{content.title}</DrawerTitle>
-                          <DrawerTitle className="text-neutral-500 dark:text-neutral-400">
+                          <DrawerTitle className="text-neutral-400">
                             {content.author}
                           </DrawerTitle>
                         </div>
-
                         <DrawerDescription>
                           {content.description}
-                          <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
-                            Neden Okunmalı?
-                          </h1>
-                          <p>{content.whyToWatch}</p>
+                        </DrawerDescription>
+                        <h1 className="mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
+                          {/* Neden Okunmalı? */}
+                        </h1>
+                        <DrawerDescription>
+                          {content.whyToRead}
                         </DrawerDescription>
                       </DrawerHeader>
                     </div>
@@ -222,4 +235,4 @@ const check1Body = () => {
   )
 }
 
-export default check1Body
+export default check2Body
