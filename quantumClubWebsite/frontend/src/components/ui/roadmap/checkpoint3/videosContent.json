@@ -1,0 +1,94 @@
+[
+  {
+    "image": "https://img.youtube.com/vi/CIcCI2WrVMM/sddefault.jpg",
+    "title": "Kuantum Alan Teorisi",
+    "link": "https://youtu.be/CIcCI2WrVMM",
+    "videoTopics": [
+      "Kuantum alanlarının temel tanıtımı.",
+      "Parçacıkların alanlarla nasıl etkileştiği."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/PutOOpAkjQ4/sddefault.jpg",
+    "title": "Kuantum Elektrodinamiği (QED)",
+    "link": "https://youtu.be/PutOOpAkjQ4",
+    "videoTopics": [
+      "Işık ve madde arasındaki etkileşimlerin kuantum düzeyde açıklanması.",
+      "Fotonların ve elektronların davranışı.",
+      "Feynman Diyagramları açıklaması"
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/kA-3EM_zjA0/sddefault.jpg",
+    "title": "Spin ve Pauli Dışlama İlkesi",
+    "link": "https://youtu.be/kA-3EM_zjA0",
+    "videoTopics": [
+      "Spin kavramı: Parçacıkların kuantum özelliği.",
+      "Pauli dışlama ilkesi: Fermiyonların aynı durumda bulunamaması."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/KJU4vZMHegg/sddefault.jpg",
+    "title": "Bose Einstein Yoğuşması",
+    "link": "https://youtu.be/KJU4vZMHegg",
+    "videoTopics": [
+      "Fotonlar, elektronlar, ve diğer parçacıkların davranışları.",
+      "Bose-Einstein yoğuşması."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/SpZqmZPtj9I/sddefault.jpg",
+    "title": "Kuantum Manyetizması",
+    "link": "https://youtu.be/SpZqmZPtj9I",
+    "videoTopics": [
+      "Spin ve manyetik alan etkileşimleri.",
+      "Kuantum Hall etkisi."
+    ]
+  },
+  {
+    "image": "https://i.ytimg.com/vi/5aZTvvGy87U/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDi6DCvDJCCyPiZFYI2GsJuCJErPQ",
+    "title": "Kuantum Termodinamiği",
+    "link": "https://www.youtube.com/playlist?list=PLAY76UPgV951A_NF0IQNrtSxH8seXJKM6",
+    "videoTopics": [
+      "Kuantum düzeyde termodinamik yasalar.",
+      "Entropi ve bilginin korunumu.",
+      "Geniş bir konu olduğu için bütün videoların izlenmesi gerekli"
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/UnGN61hEAV0/sddefault.jpg",
+    "title": "Kuantum Bilgi Teorisi",
+    "link": "https://youtu.be/UnGN61hEAV0",
+    "videoTopics": [
+      "Kuantum bitleri (qubit) ve kuantum hesaplama.",
+      "Kuantum şifreleme ve teleportasyon."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/VcEjNnf7mRw/sddefault.jpg",
+    "title": "Higgs Bozonu ve Standart Model",
+    "link": "https://youtu.be/VcEjNnf7mRw",
+    "videoTopics": [
+      "Standart Model'in tanıtımı.",
+      "Higgs alanı ve parçacıklara kütle kazandırma mekanizması."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/ITR6aGTfJbU/sddefault.jpg",
+    "title": "Süpersimetri (SUSY)",
+    "link": "https://youtu.be/ITR6aGTfJbU",
+    "videoTopics": [
+      "Kuantum fiziğinde süpersimetri kavramı.",
+      "Fermiyonlar ve bozonlar arasındaki simetri ilişkisi."
+    ]
+  },
+  {
+    "image": "https://img.youtube.com/vi/f-ePh79aOSI/sddefault.jpg",
+    "title": "Kuantum Kütleçekimi ve Sicim Teorisi",
+    "link": "https://youtu.be/f-ePh79aOSI",
+    "videoTopics": [
+      "Kuantum kütleçekimi: Kütleçekim kuvvetinin kuantum düzeyde açıklanma çabaları.",
+      "Sicim teorisinin temelleri ve ekstra boyutlar."
+    ]
+  }
+]

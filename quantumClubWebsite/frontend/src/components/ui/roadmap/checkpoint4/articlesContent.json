@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Kuantum Bilgisayarlar ve Kripto Paralar",
+    "author": "Yavuz Selim YILDIZ",
+    "preface": "Birçok insanın, “Kuantum Bilgisayarlar gelince Blockchain güvenli olma özelliğini yitirecek” ya da “Bitcoinlerimiz tarih olacak” şeklinde cümlelerini görüyoruz. Peki, bu ne kadar doğru, kuantum bilgisayar nedir, nasıl çalışır, bilgisayarlarımızdan farkları nedir ve Blockchain, Bitcoin için, özünde ise dijital imzalar ve SHA256 için tehdit mi? sorularına cevaplar arayacağız...",
+    "link": "https://yavuzsyildiz.medium.com/kuantum-bilgisayarlar-d0d441444384"
+  },
+  {
+    "title": "Hangi Firmalar Kuantum Bilgisayar Yapıyor?",
+    "author": "Zeki Seskir",
+    "preface": "Geçtiğimiz ay Airbus’ın CTO’su Wall Street Journal’a verdiği bir röportajda havacılık ve uzay (aerospace) sektöründe kuantum bilgisayım sayesinde ciddi gelişmeler olabileceğinden bahsetti. Kompleks tasarım süreçlerinin hızlandırılması, yakıt tasarrufu yapacak dizaynların gerçekleştirilebilmesi ve kuantum şifreleme sayesinde uçak ve dronlar arası güvenli iletişimin sağlanabilmesi gibi gelişmelerin sektöre olumlu etkilerini vurguladı.",
+    "link": "https://medium.com/duzensiz/hangi-firmalar-kuantum-bilgisayar-yapiyor-bec2edf4523d"
+  },
+  {
+    "title": "Kuantum Teknolojilerinde Kariyer ve Kullanım Örnekleri (Use Cases)",
+    "author": "Zeki Seskir",
+    "preface": "Geçtiğimiz günlerde Sanayi ve Teknoloji Bakanının “Ülkemizi biyoteknoloji, kuantum hesaplama, hızlandırıcılar gibi teknolojilerde öncülerden yapmak istiyoruz” açıklaması ve Hürriyet gibi ana akım yerlerde bile karşımıza çıkmaya başlayan ‘kuantum devrimi’ yazıları ile kuantum teknolojilerine ilginin görece yükseldiği bir dönemden geçiyoruz.",
+    "link": "https://medium.com/qturkey/kuantum-teknolojilerinde-kariyer-ve-kullanim-ornekleri-use-cases-43d4ac03dda1"
+  },
+  {
+    "title": "Çinlilerin Kuantum Uydusu ve İletişimin Geleceği",
+    "author": "Zeki Seskir",
+    "preface": "16 Ağustos 2016’da fırlatılan Çin’in QUESS (Quantum Experiments at Space Scale) ya da diğer adıyla Micius (2500 yıl önce yaşamış Çinli bir filozof ve bilimci) uydusundan ilk sonuçlar gelmeye başladı. Projenin başındaki bilim insanları uydunun beklediklerinden de iyi çalıştığını belirten açıklamalarda bulundular. Peki kuantum iletişim alanındaki gelişmeleri takip etmeyen insanlar için bu ne anlama gelmekte ve niçin ciddiye alınmalı?",
+    "link": "https://medium.com/duzensiz/%C3%A7inlilerin-kuantum-uydusu-ve-i%CC%87leti%C5%9Fimin-gelece%C4%9Fi-12dd86d840b4"
+  },
+  {
+    "title": "Kuantum Dolanıklık ve Güvenli İletişim",
+    "author": "Zeki Seskir",
+    "preface": "Kuantum dolanıklık alışık olmayanlar için karışık görünen ve üzerine yazılmış pek çok popüler yazı bulunabilecek bir konu. Ne yazık ki bazen fazla mistifiye edilmesi ve garip anlamlar yüklenmesi nedeniyle insanlarda, sanki anlaması zor bir kavram olduğu fikrini uyandırmakta. Bu yazıda kuantum dolanıklık fenomenini kullanarak herhangi iki nokta arasında, en azından kuramsal düzeyde, yüzde yüz güvenli iletişim kurma fikrinin temellerine değineceğiz.",
+    "link": "https://medium.com/duzensiz/kuantum-dolaniklik-ve-guvenli-iletisim-d32afe5c7d89"
+  }
+]

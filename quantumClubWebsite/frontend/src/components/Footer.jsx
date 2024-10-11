@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 const Footer = () => {
   return (
     <Container>
-      <footer className="mb-4 mt-10 flex h-12 w-full flex-row items-end justify-center border-t text-[#fafafa99]">
+      <footer className="mb-4 mt-10 flex h-12 w-full flex-row items-end justify-center border-t text-neutral-500 dark:text-neutral-400">
         <h1>built by</h1>
         <HoverCard>
           <HoverCardTrigger>
@@ -22,8 +22,10 @@ const Footer = () => {
           </HoverCardTrigger>
           <HoverCardContent>
             <div className="flex flex-col">
-              <h1 className="">Erdem Koyuncu</h1>
-              <p className="text-[#a1a1aa]">software engineering std.</p>
+              <h1 className="font-semibold">Erdem Koyuncu</h1>
+              <p className="text-neutral-500 dark:text-neutral-400">
+                software engineering std.
+              </p>
             </div>
           </HoverCardContent>
         </HoverCard>

@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Kuantum Hesaplama ve Yapay Zekanın Geleceği: Bugünkü Bilimden Yarının Teknolojisine",
+    "author": "Astrafizik",
+    "preface": "Kuantum hesaplama, verileri işlemek için kuantum fiziğinin ilkelerinden yararlanan keskin uç teknolojinin zirvesidir. Klasik bilgisayarların işlev görmek için ikili bitler (0’lar ve 1’ler) kullandığına karşın, kuantum bilgisayarlar kuantum bitlerini, yani kubitleri kullanır. ",
+    "link": "https://medium.com/@astrafizik/kuantum-hesaplama-ve-yapay-zekan%C4%B1n-gelece%C4%9Fi-bug%C3%BCnk%C3%BC-bilimden-yar%C4%B1n%C4%B1n-teknolojisine-e7e8bc6dec31"
+  },
+  {
+    "title": "Mutlak Sıfıra Ulaşmak: Kuantum Mekaniği’nin Soğuk Sınırlarında",
+    "author": "Astrafizik",
+    "preface": "Kuantum mekaniği, mikro dünyanın anlaşılması için temel bir teoridir. Bu teori, atomlar, moleküller ve elementer parçacıklar gibi mikroskobik sistemlerin davranışını açıklar. Kuantum mekaniği, son derece düşük sıcaklıklara yaklaşıldığında olağanüstü fenomenler sergiler. Bu yazıda, Mutlak Sıfırı (-273.15°C veya 0 Kelvin) elde etme çabaları ve bu hedefe ulaşmanın kuantum mekaniği üzerindeki etkileri ele alınacaktır.",
+    "link": "https://medium.com/@astrafizik/mutlak-s%C4%B1f%C4%B1ra-ula%C5%9Fmak-kuantum-mekani%C4%9Finin-so%C4%9Fuk-s%C4%B1n%C4%B1rlar%C4%B1nda-a9b71506e7c4"
+  },
+  {
+    "title": "Kuantum Sıçramalarına Bakış",
+    "author": "Astrafizik",
+    "preface": "Kuantum sıçraması, kuantum mekaniğinde atomlar ve moleküllerde meydana gelen ani ve belirgin enerji seviyesi değişikliklerini ifade eder. Kuantum mekaniği, madde ve enerjinin çok küçük ölçeklerdeki davranışını inceleyen bir fizik dalıdır. Kuantum sıçraması, bu alandaki temel kavramlardan biridir.",
+    "link": "https://medium.com/@astrafizik/kuantum-s%C4%B1%C3%A7ramalar%C4%B1na-bak%C4%B1%C5%9F-73e8d82a75dc"
+  },
+  {
+    "title": "Kuantum Bilgisayarların Matematiği Üzerine",
+    "author": "Zeki Seskir",
+    "preface": "Google’da aramalara ‘kuantum bilgisayar’ yazdığınızda karşınıza uzaylılar tarafından yapılmışa benzeyen, bronz renkli yapılar içerisinde tanıdık çip yapıları bulunan teknoloji eserleri çıkacaktır. Oysa alanla ilgili birisine kuantum bilgisayar dediğinizde onun zihninde beliren yukarıdaki devre modelidir. O teknoloji harikası, milikelvin düzeylerinde sıcaklıklarda çalışan ve tanesi milyonlarca dolara mal olan ürünler yukarıdaki devre şemasının fiziksel gerçeklenimleridir, bizim için esas olansa devredir!",
+    "link": "https://medium.com/duzensiz/kuantum-bilgisayarlar%C4%B1n-matemati%C4%9Fi-%C3%BCzerine-a787df82a8ce"
+  },
+  {
+    "title": "Kuantum Bilgisayıma Dair 5 Yanlış Kanı",
+    "author": "Zeki Seskir",
+    "preface": "Bu yazıda Dominic Walliman’ın Domain of Science kanalında hazırladığı “5 Quantum Computing Misconceptions” videosu temelinde kuantum bilgisayıma dair beş yanlış kanıya değineceğiz. Kuantum bilgisayar nedir, bu teknolojiler neden önemlidir, ekonomik olarak bir anlamı var mıdır veya nasıl çalışırlar gibi sorulara dair daha önce yazdıklarımıza bu sayfanın en altındaki linklerden ulaşabilirsiniz.",
+    "link": "https://medium.com/duzensiz/kuantum-bilgisayima-dair-bes-yanlis-kani-7fbf4e9c8223"
+  }
+]

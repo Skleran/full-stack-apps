@@ -25,11 +25,13 @@ const check3Header = () => {
         >
           <h1 className="text-2xl font-semibold">Welcome to Checkpoint 3!</h1>
           <p className="text-sm">
-            Bu aşamada ilerlemeniz gereken 3 yol bulunuyor: filmler, diziler ve
-            kitaplar. Bu macerada verimli çalışabilmek için aşağıdaki
-            linklerdeki görevleri tamamlamalısınız. Bu linkler, kuantum
-            evreninin film, dizi ve kitaplarda nasıl işlendiğini anlamanızı
-            sağlayacak ve kuantum hakkında temel bilgiler sunacaktır.
+            Bu aşamada ilerlemeniz gereken toplam 3 yol bulunmakta. Bunlar
+            sırasıyla videolar, kitaplar ve makalelerdir. Bu heyecan dolu
+            macerada tam verimle çalışabilmek için aşağıdaki linklerin içindeki
+            yazan görevleri tamamlamanız gerekmektedir. Aşağıda toplam üç adet
+            link bulunmaktadır. Bu linkler size kuantum evrenini video, kitap ve
+            makalelerle anlatarak gelişiminize destek vermektedir. Bu adımda hem
+            eğlenecek hem de kendinize birçok yeni bilgi katacaksınız.
           </p>
         </motion.div>
       </div>
