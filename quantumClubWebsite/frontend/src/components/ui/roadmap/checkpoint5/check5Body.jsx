@@ -65,7 +65,7 @@ const check5Body = () => {
               <SwiperSlide key={index} className="w-auto rounded-lg">
                 <Drawer>
                   <DrawerTrigger>
-                    <div className="flex h-20 w-60 flex-col justify-evenly overflow-hidden rounded-md bg-neutral-200 px-1 py-1 dark:bg-neutral-800">
+                    <div className="flex h-20 w-60 flex-col justify-evenly overflow-hidden rounded-md bg-neutral-300 px-1 py-1 dark:bg-neutral-700">
                       <h1 className="line-clamp-2 text-lg font-semibold leading-6">
                         {content.title}
                       </h1>
