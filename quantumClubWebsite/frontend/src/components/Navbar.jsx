@@ -21,8 +21,7 @@ const Navbar = () => {
               <SheetContent side="left">
                 <nav className="flex flex-col gap-4 pl-6 pt-5">
                   <Link to="/full-stack-apps/roadmap">Roadmap</Link>
-                  <Link to="/full-stack-apps/announcements">Announcements</Link>
-                  <a href="">Events</a>
+                  <Link to="/full-stack-apps/events">Events</Link>
                   <a href="">Team</a>
                   <a href="">About Us</a>
                 </nav>
@@ -37,18 +36,18 @@ const Navbar = () => {
             <div className="font-medium">Quantum Club</div>
           </Link>
           <nav className="text-g ml-6 hidden flex-row gap-12 md:flex lg:gap-16">
-            <a
-              href=""
+            <Link
+              to="/full-stack-apps/roadmap"
               className="text-sm text-foreground/60 transition-colors hover:text-foreground/80"
             >
-              Announcements
-            </a>
-            <a
-              href=""
+              Roadmap
+            </Link>
+            <Link
+              to="/full-stack-apps/events"
               className="text-sm text-foreground/60 transition-colors hover:text-foreground/80"
             >
               Events
-            </a>
+            </Link>
             <a
               href=""
               className="text-sm text-foreground/60 transition-colors hover:text-foreground/80"

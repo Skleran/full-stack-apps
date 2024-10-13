@@ -10,6 +10,7 @@ import RMCheckpoint4 from './pages/roadmaps/RMCheckpoint4'
 import RMCheckpoint5 from './pages/roadmaps/RMCheckpoint5'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import EventsPage from './pages/EventsPage'
 
 function App() {
   return (
@@ -19,10 +20,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/full-stack-apps/" element={<HomePage />} />
-          <Route
-            path="/full-stack-apps/announcements"
-            element={<AnnouncementsPage />}
-          />
           <Route
             path="/full-stack-apps/roadmap"
             element={<RoadmapMainPage />}
@@ -47,6 +44,7 @@ function App() {
             path="/full-stack-apps/checkpoint-5"
             element={<RMCheckpoint5 />}
           />
+          <Route path="/full-stack-apps/events" element={<EventsPage />} />
         </Routes>
         <Footer />
       </Router>
