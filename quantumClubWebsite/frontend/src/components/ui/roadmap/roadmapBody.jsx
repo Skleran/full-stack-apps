@@ -16,13 +16,13 @@ const roadmapBody = () => {
         </p>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <motion.div
           initial={{ opacity: 0.3, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           // viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col gap-4 rounded-lg border bg-sky-100 p-3 shadow-lg dark:bg-sky-950"
+          className="flex flex-col gap-4 rounded-lg border justify-between bg-sky-100 p-3 shadow-lg dark:bg-sky-950"
         >
           <h1 className="text-2xl font-semibold">Checkpoint 1</h1>
           <p className="text-sm">
@@ -40,7 +40,7 @@ const roadmapBody = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           // viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col gap-4 rounded-lg border bg-blue-200 p-3 shadow-lg dark:bg-blue-950"
+          className=" justify-between flex flex-col gap-4 rounded-lg border bg-blue-200 p-3 shadow-lg dark:bg-blue-950"
         >
           <h1 className="text-2xl font-semibold">Checkpoint 2</h1>
           <p className="text-sm">
@@ -59,7 +59,7 @@ const roadmapBody = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           // viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col gap-4 rounded-lg border bg-indigo-300 p-3 shadow-lg dark:bg-indigo-950"
+          className="flex justify-between flex-col gap-4 rounded-lg border bg-indigo-300 p-3 shadow-lg dark:bg-indigo-950"
         >
           <h1 className="text-2xl font-semibold">Checkpoint 3</h1>
           <p className="text-sm">
@@ -77,7 +77,7 @@ const roadmapBody = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           // viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col gap-4 rounded-lg border bg-violet-300 p-3 shadow-lg dark:bg-violet-950"
+          className="flex flex-col justify-between gap-4 rounded-lg border bg-violet-300 p-3 shadow-lg dark:bg-violet-950"
         >
           <h1 className="text-2xl font-semibold">Checkpoint 4</h1>
           <p className="text-sm">
@@ -95,7 +95,7 @@ const roadmapBody = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           // viewport={{ once: true }}
           transition={{ duration: 0.3 }}
-          className="flex flex-col gap-4 rounded-lg border bg-purple-300 p-3 shadow-lg dark:bg-purple-950"
+          className="flex flex-col justify-between gap-4 rounded-lg border bg-purple-300 p-3 shadow-lg dark:bg-purple-950"
         >
           <h1 className="text-2xl font-semibold">Checkpoint 5</h1>
           <p className="text-sm">
