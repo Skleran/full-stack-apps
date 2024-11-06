@@ -15,7 +15,7 @@ const HomeBody = () => {
             <h1 className="text-5xl font-semibold">Objective</h1>
           </div>
 
-          <div className="flex flex-col gap-6 px-4">
+          <div className="flex flex-col gap-6 px-4 py-4 md:text-lg lg:text-xl">
             <p className="">
               &nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit, amet consectetur
               adipisicing elit. Doloremque possimus aspernatur.

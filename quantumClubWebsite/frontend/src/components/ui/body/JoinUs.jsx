@@ -53,15 +53,21 @@ const JoinUs = () => {
   }
 
   return (
-    <div className="mt-8 flex w-full flex-col items-center justify-center gap-4 rounded-lg border py-8 shadow">
+    <div className="mt-8 flex w-full flex-col items-center justify-center gap-4 rounded-lg border py-8 shadow lg:gap-8">
       <div className="flex flex-col text-center">
-        <h1 className="text-center text-2xl font-semibold">Become a member</h1>
-        <h1 className="text-center text-2xl font-semibold">of our club!</h1>
+        <h1 className="text-center text-2xl font-semibold lg:text-3xl">
+          Become a member
+        </h1>
+        <h1 className="text-center text-2xl font-semibold lg:text-3xl">
+          of our club!
+        </h1>
       </div>
 
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <Button className="px-24">Count me in!</Button>
+          <Button className="px-24 lg:h-10 lg:w-[300px] lg:text-base lg:font-bold">
+            Count me in!
+          </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>

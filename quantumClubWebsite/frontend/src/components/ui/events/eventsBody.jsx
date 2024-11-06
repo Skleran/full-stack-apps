@@ -9,7 +9,7 @@ import {
 const eventsBody = () => {
   return (
     <>
-      <div className="mt-8 flex w-full flex-col gap-4">
+      <div className="mt-8 grid grid-cols-1 items-baseline gap-4 md:grid-cols-2">
         <Accordion
           type="single"
           collapsible

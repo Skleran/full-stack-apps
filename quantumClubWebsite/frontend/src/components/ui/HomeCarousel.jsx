@@ -19,7 +19,7 @@ const HomeCarousel = () => {
             lazy={true}
             pagination={true}
             modules={[Navigation, Pagination]}
-            className="h-[50vh] rounded-lg border-[1px]"
+            className="h-[50vh] rounded-lg border-[1px] lg:h-[60vh] xl:h-[70vh]"
           >
             <SwiperSlide>
               <div
@@ -37,10 +37,12 @@ const HomeCarousel = () => {
                     transition: { duration: 0.6 },
                   }}
                   // viewport={{ once: true }}
-                  className="mx-4 mb-6 flex w-fit flex-col rounded-xl p-1 shadow backdrop-blur-sm backdrop-brightness-50"
+                  className="mx-4 mb-6 flex w-fit flex-col gap-2 rounded-xl px-2 py-1 shadow backdrop-blur-md backdrop-brightness-75 md:gap-3 md:px-4 md:py-2"
                 >
-                  <h1 className="text-xl">Quantum Muantum</h1>
-                  <p className="text-[#afafaff1]">
+                  <h1 className="text-2xl font-semibold text-white dark:text-white md:text-3xl">
+                    Quantum Muantum
+                  </h1>
+                  <p className="text-neutral-300">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tempora, consectetur.
                   </p>
@@ -62,10 +64,12 @@ const HomeCarousel = () => {
                     opacity: 1,
                     transition: { duration: 0.6 },
                   }}
-                  className="mx-4 mb-6 flex w-fit flex-col rounded-xl p-1 shadow backdrop-blur-sm backdrop-brightness-50"
+                  className="mx-4 mb-6 flex w-fit flex-col gap-2 rounded-xl px-2 py-1 shadow backdrop-blur-md backdrop-brightness-75 md:gap-3 md:px-4 md:py-2"
                 >
-                  <h1 className="text-xl">Lorem Ipsum</h1>
-                  <p className="text-[#afafaff1]">
+                  <h1 className="text-2xl font-semibold text-white dark:text-white">
+                    Lorem Ipsum
+                  </h1>
+                  <p className="text-neutral-300">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Tempora, consectetur.
                   </p>

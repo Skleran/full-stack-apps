@@ -16,37 +16,41 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop />
-        <Navbar />
-        <Routes>
-          <Route path="/full-stack-apps/" element={<HomePage />} />
-          <Route
-            path="/full-stack-apps/roadmap"
-            element={<RoadmapMainPage />}
-          />
-          <Route
-            path="/full-stack-apps/checkpoint-1"
-            element={<RMCheckpoint1 />}
-          />
-          <Route
-            path="/full-stack-apps/checkpoint-2"
-            element={<RMCheckpoint2 />}
-          />
-          <Route
-            path="/full-stack-apps/checkpoint-3"
-            element={<RMCheckpoint3 />}
-          />
-          <Route
-            path="/full-stack-apps/checkpoint-4"
-            element={<RMCheckpoint4 />}
-          />
-          <Route
-            path="/full-stack-apps/checkpoint-5"
-            element={<RMCheckpoint5 />}
-          />
-          <Route path="/full-stack-apps/events" element={<EventsPage />} />
-        </Routes>
-        <Footer />
+        <div className="flex min-h-screen flex-col justify-between">
+          <div>
+            <ScrollToTop />
+            <Navbar />
+            <Routes>
+              <Route path="/full-stack-apps/" element={<HomePage />} />
+              <Route
+                path="/full-stack-apps/roadmap"
+                element={<RoadmapMainPage />}
+              />
+              <Route
+                path="/full-stack-apps/checkpoint-1"
+                element={<RMCheckpoint1 />}
+              />
+              <Route
+                path="/full-stack-apps/checkpoint-2"
+                element={<RMCheckpoint2 />}
+              />
+              <Route
+                path="/full-stack-apps/checkpoint-3"
+                element={<RMCheckpoint3 />}
+              />
+              <Route
+                path="/full-stack-apps/checkpoint-4"
+                element={<RMCheckpoint4 />}
+              />
+              <Route
+                path="/full-stack-apps/checkpoint-5"
+                element={<RMCheckpoint5 />}
+              />
+              <Route path="/full-stack-apps/events" element={<EventsPage />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </Router>
     </>
   )

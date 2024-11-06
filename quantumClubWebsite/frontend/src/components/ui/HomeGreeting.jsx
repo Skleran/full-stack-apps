@@ -8,7 +8,7 @@ const HomeGreeting = () => {
       <Container>
         <div className="flex flex-col py-6 pb-8 md:flex-row">
           <h1 className="text-6xl font-bold">Welcome!</h1>
-          <h1 className="flex items-center px-4 text-5xl font-bold md:h-[60px]">
+          <h1 className="flex items-center px-4 text-5xl font-bold md:h-[60px] md:items-end">
             to
           </h1>
 
