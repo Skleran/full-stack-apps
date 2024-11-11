@@ -11,6 +11,7 @@ import RMCheckpoint5 from './pages/roadmaps/RMCheckpoint5'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import EventsPage from './pages/EventsPage'
+import TeamPage from './pages/TeamPage'
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
                 element={<RMCheckpoint5 />}
               />
               <Route path="/full-stack-apps/events" element={<EventsPage />} />
+              <Route path="/full-stack-apps/team" element={<TeamPage />} />
             </Routes>
           </div>
           <Footer />
