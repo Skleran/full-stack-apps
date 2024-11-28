@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { MonitorPlay, Clapperboard, BookText } from 'lucide-react'
 import 'swiper/css'
+import '../custom.css'
 import {
   Accordion,
   AccordionContent,
@@ -19,6 +20,18 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer'
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+  DialogImage,
+  DialogSubtitle,
+  DialogClose,
+  DialogDescription,
+  DialogContainer,
+} from '@/components/ui/dialogAlt'
+import { PlusIcon } from 'lucide-react'
 import moviesContent from './moviesContent.json'
 import seriesContent from './seriesContent.json'
 import booksContent from './booksContent.json'
@@ -27,14 +40,14 @@ const movieContent = moviesContent
 const serieContent = seriesContent
 const bookContent = booksContent
 
-const check1Body = () => {
+const check1BodyDesktop = () => {
   return (
     <>
       <motion.div
         initial={{ y: -178 }}
         animate={{ y: -30 }}
         transition={{ ease: 'easeOut', duration: 0.6 }}
-        className="rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900 lg:hidden"
+        className="hidden rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900 lg:block"
       >
         <div className="py-3">
           {/* Recommended series */}
@@ -64,21 +77,35 @@ const check1Body = () => {
           >
             {serieContent.map((content, index) => (
               <SwiperSlide key={index} className="w-auto rounded-lg">
-                <Drawer>
-                  <DrawerTrigger>
-                    <div className="h-40 w-[6.75rem] overflow-hidden rounded-md bg-neutral-700">
-                      <img
-                        src={content.image}
-                        alt=""
-                        className="h-full w-full overflow-hidden rounded-md object-cover"
-                      />
-                    </div>
-                  </DrawerTrigger>
-                  <DrawerContent>
-                    <div className="mx-auto h-[400px] w-full max-w-sm">
-                      <DrawerHeader>
-                        <DrawerTitle>{content.title}</DrawerTitle>
-                        <DrawerDescription>
+                <Dialog
+                  transition={{
+                    type: 'spring',
+                    bounce: 0.1,
+                    duration: 0.6,
+                  }}
+                >
+                  <DialogTrigger className="h-40 w-[6.75rem] overflow-hidden rounded-md bg-neutral-700">
+                    <DialogImage
+                      src={content.image}
+                      alt=""
+                      className="h-full w-full overflow-hidden rounded-md object-cover"
+                    />
+                    {/* <DialogTitle className="">{content.title}</DialogTitle> */}
+                  </DialogTrigger>
+                  <DialogContainer>
+                    <DialogContent className="pointer-events-auto relative flex max-h-[400px] w-[650px] overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900">
+                      <div className="h-[400px] w-fit flex-shrink-0">
+                        <DialogImage
+                          src={content.image}
+                          alt=""
+                          className="h-full w-full rounded-md object-cover"
+                        />
+                      </div>
+
+                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
+                        <DialogTitle>{content.title}</DialogTitle>
+                        <DialogDescription>
+                          {content.description}
                           {content.description}
                           <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
                             Kuantumla Alakası:
@@ -90,11 +117,11 @@ const check1Body = () => {
                               ))}
                             </ul>
                           )}
-                        </DrawerDescription>
-                      </DrawerHeader>
-                    </div>
-                  </DrawerContent>
-                </Drawer>
+                        </DialogDescription>
+                      </div>
+                    </DialogContent>
+                  </DialogContainer>
+                </Dialog>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -222,4 +249,4 @@ const check1Body = () => {
   )
 }
 
-export default check1Body
+export default check1BodyDesktop
