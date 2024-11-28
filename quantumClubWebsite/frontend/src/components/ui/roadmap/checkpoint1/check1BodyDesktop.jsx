@@ -80,8 +80,8 @@ const check1BodyDesktop = () => {
                 <Dialog
                   transition={{
                     type: 'spring',
-                    bounce: 0.1,
-                    duration: 0.6,
+                    stiffness: 200,
+                    damping: 24,
                   }}
                 >
                   <DialogTrigger className="h-40 w-[6.75rem] overflow-hidden rounded-md bg-neutral-700">
@@ -90,22 +90,46 @@ const check1BodyDesktop = () => {
                       alt=""
                       className="h-full w-full overflow-hidden rounded-md object-cover"
                     />
-                    {/* <DialogTitle className="">{content.title}</DialogTitle> */}
+                    <div className="flex flex-grow flex-row items-end justify-between p-2">
+                      <div>
+                        <DialogTitle className="text-zinc-950 dark:text-zinc-50">
+                          Dark
+                        </DialogTitle>
+                        <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
+                      </div>
+                      <button
+                        type="button"
+                        className="relative ml-1 flex h-6 w-6 shrink-0 scale-100 select-none appearance-none items-center justify-center rounded-lg border border-zinc-950/10 text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-800 focus-visible:ring-2 active:scale-[0.98] dark:border-zinc-50/10 dark:bg-zinc-900 dark:text-zinc-500 dark:hover:bg-zinc-800 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-500"
+                        aria-label="Open dialog"
+                      >
+                        <PlusIcon size={12} />
+                      </button>
+                    </div>
                   </DialogTrigger>
-                  <DialogContainer>
-                    <DialogContent className="pointer-events-auto relative flex max-h-[400px] w-[650px] overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900">
+                  <DialogContainer className="z-20">
+                    <DialogContent className="pointer-events-auto relative flex max-h-[400px] w-[650px] overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 xl:w-[720px] 2xl:w-[800px]">
                       <div className="h-[400px] w-fit flex-shrink-0">
                         <DialogImage
                           src={content.image}
                           alt=""
-                          className="h-full w-full rounded-md object-cover"
+                          className="h-full w-full object-cover"
                         />
                       </div>
 
                       <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
-                        <DialogTitle>{content.title}</DialogTitle>
-                        <DialogDescription>
-                          {content.description}
+                        <DialogTitle className="pb-2 text-2xl font-bold 2xl:pb-4">
+                          {content.title}
+                        </DialogTitle>
+                        <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
+                        <DialogDescription
+                          disableLayoutAnimation
+                          variants={{
+                            initial: { opacity: 0, scale: 0.8, y: 100 },
+                            animate: { opacity: 1, scale: 1, y: 0 },
+                            exit: { opacity: 0, scale: 0.8, y: 100 },
+                          }}
+                          className="text-zinc-700 dark:text-zinc-300"
+                        >
                           {content.description}
                           <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
                             Kuantumla Alakası:

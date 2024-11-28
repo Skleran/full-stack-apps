@@ -10,7 +10,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme()
 
   return (
-    <nav className="sticky top-0 z-50 flex h-14 items-center border-b border-black border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:flex sm:justify-between">
+    <nav className="sticky top-0 z-10 flex h-14 items-center border-b border-black border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sm:flex sm:justify-between">
       <Container>
         <div className="relative flex w-full items-center justify-between">
           <div className="flex items-center justify-between gap-3">
