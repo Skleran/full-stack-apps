@@ -84,7 +84,7 @@ const check2BodyDesktop = () => {
                   }}
                 >
                   <DialogTrigger>
-                    <div className="flex aspect-[16/11] h-52 flex-col justify-between overflow-hidden rounded-lg bg-neutral-200 font-semibold dark:bg-neutral-800">
+                    <div className="flex aspect-[16/11] h-52 flex-col justify-between overflow-hidden rounded-lg bg-neutral-200 font-semibold transition-colors hover:bg-neutral-300 dark:bg-neutral-800 dark:hover:bg-neutral-700">
                       <DialogImage
                         src={content.image}
                         alt=""
@@ -106,7 +106,7 @@ const check2BodyDesktop = () => {
                         />
                       </div>
 
-                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
+                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4 px-6">
                         <DialogTitle className="pb-2 text-2xl font-bold 2xl:pb-2">
                           {content.title}
                         </DialogTitle>
@@ -130,17 +130,16 @@ const check2BodyDesktop = () => {
                               ))}
                             </ul>
                           )}
-                          <a
-                            href={content.link}
-                            className="flex items-center justify-center"
-                          >
-                            <Button className="mt-6 w-[80%] px-16 py-2 font-semibold">
-                              Videoya Git
-                            </Button>
-                          </a>
+                          <div className="mt-6 flex w-full items-center justify-center">
+                            <a href={content.link} className="w-[50%]">
+                              <Button className="w-full px-16 py-2 font-semibold">
+                                Videoya Git
+                              </Button>
+                            </a>
+                          </div>
                         </DialogDescription>
                       </div>
-                      <DialogClose className="rounded-lg bg-zinc-700/50 p-[2px] text-zinc-50 dark:bg-zinc-50/70 dark:text-zinc-800" />
+                      <DialogClose className="rounded-lg bg-zinc-900/80 p-[2px] text-zinc-50 transition-colors hover:bg-zinc-800/80 dark:bg-zinc-50/80 dark:text-zinc-800 dark:hover:bg-zinc-200/80" />
                     </DialogContent>
                   </DialogContainer>
                 </Dialog>
@@ -175,34 +174,49 @@ const check2BodyDesktop = () => {
           >
             {articleContent.map((content, index) => (
               <SwiperSlide key={index} className="w-auto rounded-lg">
-                <Drawer>
-                  <DrawerTrigger>
-                    <div className="flex h-20 w-60 flex-col justify-evenly overflow-hidden rounded-md bg-neutral-300 px-1 py-1 dark:bg-neutral-700">
-                      <h1 className="line-clamp-2 text-lg font-semibold leading-6">
+                <Dialog
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    damping: 24,
+                  }}
+                >
+                  <DialogTrigger className="flex h-20 w-60 flex-col justify-evenly overflow-hidden rounded-md bg-neutral-200 px-1 py-1 transition-colors hover:bg-neutral-300 dark:bg-neutral-800 dark:hover:bg-neutral-700">
+                    <DialogTitle className="line-clamp-2 text-center text-lg font-semibold leading-6 text-zinc-950 dark:text-zinc-50">
+                      {content.title}
+                    </DialogTitle>
+                    <DialogSubtitle className="text-center font-semibold text-neutral-500 dark:text-neutral-400">
+                      {content.author}
+                    </DialogSubtitle>
+                  </DialogTrigger>
+                  <DialogContainer className="z-20">
+                    <DialogContent className="pointer-events-auto relative flex max-h-[500px] w-[450px] flex-col overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white px-6 py-4 dark:border-zinc-50/10 dark:bg-zinc-900 xl:w-[500px]">
+                      <DialogTitle className="text-2xl font-semibold text-zinc-950 dark:text-zinc-50">
                         {content.title}
-                      </h1>
-                      <h2 className="text-neutral-500 dark:text-neutral-400">
+                      </DialogTitle>
+                      <DialogSubtitle className="text-lg font-semibold text-zinc-700 dark:text-zinc-400">
                         {content.author}
-                      </h2>
-                    </div>
-                  </DrawerTrigger>
-                  <DrawerContent>
-                    <div className="mx-auto h-[400px] w-full max-w-sm">
-                      <DrawerHeader>
-                        <DrawerTitle>{content.title}</DrawerTitle>
-                        <h1 className="mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400"></h1>
-                        <DrawerDescription>
-                          {content.preface}
-                          <a href={content.link}>
-                            <Button className="mt-8 w-[80vw] px-16 py-2">
-                              Makaleye Git
-                            </Button>
-                          </a>
-                        </DrawerDescription>
-                      </DrawerHeader>
-                    </div>
-                  </DrawerContent>
-                </Drawer>
+                      </DialogSubtitle>
+                      <DialogDescription
+                        disableLayoutAnimation
+                        variants={{
+                          initial: { opacity: 0, scale: 0.8, y: 100 },
+                          animate: { opacity: 1, scale: 1, y: 0 },
+                          exit: { opacity: 0, scale: 0.8, y: 100 },
+                        }}
+                        className="relative mt-3 flex w-full flex-col items-center gap-6 leading-7"
+                      >
+                        {content.preface}
+                        <a href={content.link}>
+                          <Button className="px-16 py-2 font-bold">
+                            Makaleye Git
+                          </Button>
+                        </a>
+                      </DialogDescription>
+                      <DialogClose className="rounded-lg text-zinc-800 dark:text-zinc-50" />
+                    </DialogContent>
+                  </DialogContainer>
+                </Dialog>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -234,38 +248,68 @@ const check2BodyDesktop = () => {
           >
             {bookContent.map((content, index) => (
               <SwiperSlide key={index} className="w-auto rounded-lg">
-                <Drawer>
-                  <DrawerTrigger>
-                    <div className="h-40 w-[6.75rem] overflow-hidden rounded-md bg-neutral-700">
-                      <img
-                        src={content.image}
-                        alt=""
-                        className="h-full w-full overflow-hidden rounded-md object-cover"
-                      />
+                <Dialog
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    damping: 24,
+                  }}
+                >
+                  <DialogTrigger className="h-60 w-[10.125rem] overflow-hidden rounded-md bg-neutral-700">
+                    <DialogImage
+                      src={content.image}
+                      alt=""
+                      className="h-full w-full overflow-hidden rounded-md object-cover"
+                    />
+                    <div className="flex flex-grow flex-row items-end justify-between p-2">
+                      <div>
+                        <DialogTitle className="text-zinc-950 dark:text-zinc-50"></DialogTitle>
+                        <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
+                      </div>
                     </div>
-                  </DrawerTrigger>
-                  <DrawerContent>
-                    <div className="mx-auto h-[400px] w-full max-w-sm">
-                      <DrawerHeader>
-                        <div className="flex flex-col gap-2">
-                          <DrawerTitle>{content.title}</DrawerTitle>
-                          <DrawerTitle className="text-neutral-400">
+                  </DialogTrigger>
+                  <DialogContainer className="z-20">
+                    <DialogContent className="pointer-events-auto relative flex max-h-[400px] w-[650px] overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 xl:w-[720px] 2xl:w-[800px]">
+                      <div className="h-[400px] w-fit flex-shrink-0">
+                        <DialogImage
+                          src={content.image}
+                          alt=""
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+
+                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
+                        <DialogTitle className="mr-4 pb-2 text-2xl font-bold 2xl:pb-4">
+                          {content.title}
+                          <p className="text-xl text-neutral-500 dark:text-neutral-400">
                             {content.author}
-                          </DrawerTitle>
-                        </div>
-                        <DrawerDescription>
+                          </p>
+                        </DialogTitle>
+                        {/* <DialogTitle className="text-neutral-500 dark:text-neutral-400">
+                          {content.author}
+                        </DialogTitle> */}
+
+                        <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
+                        <DialogDescription
+                          disableLayoutAnimation
+                          variants={{
+                            initial: { opacity: 0, scale: 0.8, y: 100 },
+                            animate: { opacity: 1, scale: 1, y: 0 },
+                            exit: { opacity: 0, scale: 0.8, y: 100 },
+                          }}
+                          className="text-zinc-700 dark:text-zinc-300"
+                        >
                           {content.description}
-                        </DrawerDescription>
-                        <h1 className="mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
-                          {/* Neden Okunmalı? */}
-                        </h1>
-                        <DrawerDescription>
-                          {content.whyToRead}
-                        </DrawerDescription>
-                      </DrawerHeader>
-                    </div>
-                  </DrawerContent>
-                </Drawer>
+                          <h1 className="my-2 mt-4 text-lg font-semibold text-neutral-500 dark:text-neutral-400">
+                            {/* Neden Okunmalı? */}
+                          </h1>
+                          <p>{content.whyToWatch}</p>
+                        </DialogDescription>
+                      </div>
+                      <DialogClose className="text-zinc-800 dark:text-zinc-50" />
+                    </DialogContent>
+                  </DialogContainer>
+                </Dialog>
               </SwiperSlide>
             ))}
           </Swiper>
