@@ -19,6 +19,17 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from '@/components/ui/drawer'
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogTitle,
+  DialogClose,
+  DialogImage,
+  DialogSubtitle,
+  DialogDescription,
+  DialogContainer,
+} from '@/components/ui/dialogAlt'
 import booksContent from './booksContent.json'
 import videosContent from './videosContent.json'
 import articlesContent from './articlesContent.json'
@@ -28,14 +39,14 @@ const bookContent = booksContent
 const videoContent = videosContent
 const articleContent = articlesContent
 
-const check2Body = () => {
+const check2BodyDesktop = () => {
   return (
     <>
       <motion.div
         initial={{ y: -178 }}
         animate={{ y: -30 }}
         transition={{ ease: 'easeOut', duration: 0.6 }}
-        className="rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900 lg:hidden"
+        className="hidden rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900 lg:block"
       >
         <div className="py-3">
           {/* Recommended videos */}
@@ -65,25 +76,51 @@ const check2Body = () => {
           >
             {videoContent.map((content, index) => (
               <SwiperSlide key={index} className="w-auto rounded-lg">
-                <Drawer>
-                  <DrawerTrigger>
+                <Dialog
+                  transition={{
+                    type: 'spring',
+                    stiffness: 200,
+                    damping: 24,
+                  }}
+                >
+                  <DialogTrigger>
                     <div className="flex aspect-[16/11] h-52 flex-col justify-between overflow-hidden rounded-lg bg-neutral-200 font-semibold dark:bg-neutral-800">
-                      <img
+                      <DialogImage
                         src={content.image}
                         alt=""
                         className="aspect-[16/9] overflow-hidden object-cover"
                       />
-                      <h1 className="text-md mb-2 overflow-hidden truncate px-3">
+                      <DialogTitle className="text-md mb-2 overflow-hidden truncate px-3 text-center">
                         {content.title}
-                      </h1>
+                      </DialogTitle>
+                      <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
                     </div>
-                  </DrawerTrigger>
-                  <DrawerContent>
-                    <div className="mx-auto h-[400px]">
-                      <DrawerHeader>
-                        <DrawerTitle>{content.title}</DrawerTitle>
-                        <DrawerDescription>
-                          <h1 className="my-2 mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400">
+                  </DialogTrigger>
+                  <DialogContainer className="z-20">
+                    <DialogContent className="pointer-events-auto relative flex max-h-[750px] w-[500px] flex-col overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 xl:w-[550px] 2xl:w-[600px]">
+                      <div className="w-fit flex-shrink-0">
+                        <DialogImage
+                          src={content.image}
+                          alt=""
+                          className="aspect-[16/9] h-full w-full overflow-hidden object-cover"
+                        />
+                      </div>
+
+                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
+                        <DialogTitle className="pb-2 text-2xl font-bold 2xl:pb-2">
+                          {content.title}
+                        </DialogTitle>
+                        <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
+                        <DialogDescription
+                          disableLayoutAnimation
+                          variants={{
+                            initial: { opacity: 0, scale: 0.8, y: 100 },
+                            animate: { opacity: 1, scale: 1, y: 0 },
+                            exit: { opacity: 0, scale: 0.8, y: 100 },
+                          }}
+                          className="text-zinc-700 dark:text-zinc-300"
+                        >
+                          <h1 className="my-2 text-lg font-semibold text-neutral-500 dark:text-neutral-400">
                             Video Icerigi:
                           </h1>
                           {content.videoTopics.length > 0 && (
@@ -93,16 +130,20 @@ const check2Body = () => {
                               ))}
                             </ul>
                           )}
-                          <a href={content.link}>
-                            <Button className="mt-8 w-[80vw] px-16 py-2">
+                          <a
+                            href={content.link}
+                            className="flex items-center justify-center"
+                          >
+                            <Button className="mt-6 w-[80%] px-16 py-2 font-semibold">
                               Videoya Git
                             </Button>
                           </a>
-                        </DrawerDescription>
-                      </DrawerHeader>
-                    </div>
-                  </DrawerContent>
-                </Drawer>
+                        </DialogDescription>
+                      </div>
+                      <DialogClose className="rounded-lg bg-zinc-700/50 p-[2px] text-zinc-50 dark:bg-zinc-50/70 dark:text-zinc-800" />
+                    </DialogContent>
+                  </DialogContainer>
+                </Dialog>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -234,4 +275,4 @@ const check2Body = () => {
   )
 }
 
-export default check2Body
+export default check2BodyDesktop
