@@ -29,7 +29,7 @@ const bookContent = booksContent
 const videoContent = videosContent
 const articleContent = articlesContent
 
-const check2BodyDesktop = () => {
+const check3BodyDesktop = () => {
   return (
     <>
       <motion.div
@@ -309,4 +309,4 @@ const check2BodyDesktop = () => {
   )
 }
 
-export default check2BodyDesktop
+export default check3BodyDesktop

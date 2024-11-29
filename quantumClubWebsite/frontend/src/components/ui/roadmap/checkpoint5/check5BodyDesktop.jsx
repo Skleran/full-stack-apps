@@ -21,15 +21,13 @@ import {
   DialogContainer,
 } from '@/components/ui/dialogAlt'
 import booksContent from './booksContent.json'
-import videosContent from './videosContent.json'
 import articlesContent from './articlesContent.json'
 import { Button } from '../../button'
 
 const bookContent = booksContent
-const videoContent = videosContent
 const articleContent = articlesContent
 
-const check2BodyDesktop = () => {
+const check5BodyDesktop = () => {
   return (
     <>
       <motion.div
@@ -39,104 +37,6 @@ const check2BodyDesktop = () => {
         className="hidden rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900 lg:block"
       >
         <div className="py-3">
-          {/* Recommended videos */}
-          <div className="px-4">
-            <Accordion collapsible className="w-full">
-              <AccordionItem value="item-1">
-                <AccordionTrigger className="py-3">
-                  <h1 className="flex flex-row items-center gap-2 text-left text-xl font-semibold">
-                    <MonitorPlay />
-                    Video önerileri
-                  </h1>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                    Not: Daha iyi bir öğrenme için aşağıdaki önerilerden en az
-                    birini izlemeniz gerekmektedir.
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-
-          <Swiper
-            spaceBetween={10}
-            slidesPerView={'auto'}
-            className="my-2 px-2"
-          >
-            {videoContent.map((content, index) => (
-              <SwiperSlide key={index} className="w-auto rounded-lg">
-                <Dialog
-                  transition={{
-                    type: 'spring',
-                    stiffness: 200,
-                    damping: 24,
-                  }}
-                >
-                  <DialogTrigger>
-                    <div className="flex aspect-[16/11] h-52 flex-col justify-between overflow-hidden rounded-lg bg-neutral-200 font-semibold transition-colors hover:bg-neutral-300 dark:bg-neutral-800 dark:hover:bg-neutral-700">
-                      <DialogImage
-                        src={content.image}
-                        alt=""
-                        className="aspect-[16/9] overflow-hidden object-cover"
-                      />
-                      <DialogTitle className="text-md mb-2 overflow-hidden truncate px-3 text-center">
-                        {content.title}
-                      </DialogTitle>
-                      <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
-                    </div>
-                  </DialogTrigger>
-                  <DialogContainer className="z-20">
-                    <DialogContent className="pointer-events-auto relative flex max-h-[750px] w-[500px] flex-col overflow-hidden rounded-[24px] border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900 xl:w-[550px] 2xl:w-[600px]">
-                      <div className="w-fit flex-shrink-0">
-                        <DialogImage
-                          src={content.image}
-                          alt=""
-                          className="aspect-[16/9] h-full w-full overflow-hidden object-cover"
-                        />
-                      </div>
-
-                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4 px-6">
-                        <DialogTitle className="pb-2 text-2xl font-bold 2xl:pb-2">
-                          {content.title}
-                        </DialogTitle>
-                        <DialogSubtitle className="text-zinc-700 dark:text-zinc-400"></DialogSubtitle>
-                        <DialogDescription
-                          disableLayoutAnimation
-                          variants={{
-                            initial: { opacity: 0, scale: 0.8, y: 100 },
-                            animate: { opacity: 1, scale: 1, y: 0 },
-                            exit: { opacity: 0, scale: 0.8, y: 100 },
-                          }}
-                          className="text-zinc-700 dark:text-zinc-300"
-                        >
-                          <h1 className="my-2 text-lg font-semibold text-neutral-500 dark:text-neutral-400">
-                            Video Icerigi:
-                          </h1>
-                          {content.videoTopics.length > 0 && (
-                            <ul className="mt-2 list-inside list-disc">
-                              {content.videoTopics.map((item, idx) => (
-                                <li key={idx}>{item}</li>
-                              ))}
-                            </ul>
-                          )}
-                          <div className="mt-6 flex w-full items-center justify-center">
-                            <a href={content.link} className="w-[50%]">
-                              <Button className="w-full px-16 py-2 font-semibold">
-                                Videoya Git
-                              </Button>
-                            </a>
-                          </div>
-                        </DialogDescription>
-                      </div>
-                      <DialogClose className="rounded-lg bg-zinc-900/80 p-[2px] text-zinc-50 transition-colors hover:bg-zinc-800/80 dark:bg-zinc-50/80 dark:text-zinc-800 dark:hover:bg-zinc-200/80" />
-                    </DialogContent>
-                  </DialogContainer>
-                </Dialog>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-
           {/* Recommended articles */}
           <div className="px-4">
             <Accordion collapsible className="w-full">
@@ -223,8 +123,8 @@ const check2BodyDesktop = () => {
                 </AccordionTrigger>
                 <AccordionContent>
                   <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                    Not: Daha iyi bir öğrenme için aşağıdaki önerilerden en az
-                    birini okumanız gerekmektedir.
+                    Not: Daha iyi bir öğrenme için aşağıdaki kitapların hepsinin
+                    okunması gerekmektedir.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -269,7 +169,7 @@ const check2BodyDesktop = () => {
                       </div>
 
                       <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
-                        <DialogTitle className="mr-4 pb-2 text-2xl font-bold 2xl:pb-4">
+                        <DialogTitle className="mr-4 text-pretty pb-2 text-2xl font-bold 2xl:pb-4">
                           {content.title}
                           <p className="text-xl text-neutral-500 dark:text-neutral-400">
                             {content.author}
@@ -309,4 +209,4 @@ const check2BodyDesktop = () => {
   )
 }
 
-export default check2BodyDesktop
+export default check5BodyDesktop

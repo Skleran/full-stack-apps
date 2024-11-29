@@ -33,7 +33,7 @@ const check5Body = () => {
         initial={{ y: -178 }}
         animate={{ y: -30 }}
         transition={{ ease: 'easeOut', duration: 0.6 }}
-        className="rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900"
+        className="rounded-2xl border bg-neutral-100 shadow-lg dark:bg-neutral-900 lg:hidden"
       >
         <div className="py-3">
           {/* Recommended articles */}
@@ -75,14 +75,17 @@ const check5Body = () => {
                     </div>
                   </DrawerTrigger>
                   <DrawerContent>
-                    <div className="mx-auto h-[400px] w-full max-w-sm">
+                    <div className="mx-auto h-[400px] w-full max-w-[500px]">
                       <DrawerHeader>
                         <DrawerTitle>{content.title}</DrawerTitle>
                         <h1 className="mt-4 text-base font-semibold text-neutral-500 dark:text-neutral-400"></h1>
                         <DrawerDescription>
                           {content.preface}
-                          <a href={content.link}>
-                            <Button className="mt-8 w-[80vw] px-16 py-2">
+                          <a
+                            href={content.link}
+                            className="flex w-full justify-center"
+                          >
+                            <Button className="mt-8 w-[80%] px-16 py-2">
                               Makaleye Git
                             </Button>
                           </a>
@@ -133,7 +136,7 @@ const check5Body = () => {
                     </div>
                   </DrawerTrigger>
                   <DrawerContent>
-                    <div className="mx-auto h-[400px] w-full max-w-sm">
+                    <div className="mx-auto h-[400px] w-full max-w-[500px]">
                       <DrawerHeader>
                         <div className="flex flex-col gap-2">
                           <DrawerTitle>{content.title}</DrawerTitle>
@@ -142,8 +145,11 @@ const check5Body = () => {
                           </DrawerTitle>
                         </div>
                         <DrawerDescription>
-                          <a href={content.link}>
-                            <Button className="mt-8 w-[80vw] px-16 py-2">
+                          <a
+                            href={content.link}
+                            className="flex w-full justify-center"
+                          >
+                            <Button className="mt-8 w-[80%] px-16 py-2">
                               Kitaba Git
                             </Button>
                           </a>
