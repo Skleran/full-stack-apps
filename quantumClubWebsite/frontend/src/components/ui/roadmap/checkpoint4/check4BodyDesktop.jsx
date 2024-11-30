@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
 import { MonitorPlay, Clapperboard, BookText, FileText } from 'lucide-react'
 import 'swiper/css'
 import {
@@ -58,6 +59,8 @@ const check4BodyDesktop = () => {
           </div>
 
           <Swiper
+            navigation={true}
+            modules={[Navigation]}
             spaceBetween={10}
             slidesPerView={'auto'}
             className="my-2 px-2"
@@ -132,6 +135,8 @@ const check4BodyDesktop = () => {
           </div>
 
           <Swiper
+            navigation={true}
+            modules={[Navigation]}
             spaceBetween={10}
             slidesPerView={'auto'}
             className="my-2 px-2"
