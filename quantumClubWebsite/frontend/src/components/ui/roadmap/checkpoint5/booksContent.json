@@ -3,24 +3,28 @@
     "image": "https://i.dr.com.tr/cache/500x400-0/originals/0000000711900-1.jpg",
     "title": "Feynman Fizik Dersleri (4 Kitap Takım)",
     "author": "Richard P. Feynman, Matthew Sands, Robert Leighton",
-    "link": "https://www.alfakitap.com/feynman-fizik-dersleri-4-kitap-takim-richard-p-feynman-matthew-sands-robert-leighton-kitabi-223313-1486137100082-1"
+    "link": "https://www.alfakitap.com/feynman-fizik-dersleri-4-kitap-takim-richard-p-feynman-matthew-sands-robert-leighton-kitabi-223313-1486137100082-1",
+    "description": "Feynman Fizik Dersleri 4 Kitap Seti, bilim dünyasının en parlak zihinlerinden biri olan Richard Feynman'ın eşsiz anlatımıyla, fiziğin büyüleyici dünyasına kapı aralıyor. Bu set, fiziği sadece bir bilim dalı olarak değil, aynı zamanda bir yaşam biçimi olarak görenler için ideal bir kaynak. Feynman'ın anlaşılır ve eğlenceli anlatımı, karmaşık fizik kavramlarını daha önce hiç olmadığı kadar erişilebilir kılıyor. Kitapları okurken, adeta Feynman'ın derslerinde oturuyormuş gibi hissedeceksiniz."
   },
   {
     "image": "https://www.alfakitap.com/media/catalog/product/cache/7aaa48ea9734ca445e6a222a3fe7d59a/2/2/224924_9786254492068.jpg",
     "title": "Kuantum Mekaniği: Mathematica Uygulamalı",
     "author": "Emine Rızaoğlu, Mehtap Yalçınkaya, Özgür Gültekin",
-    "link": "https://www.alfakitap.com/kuantum-mekanigi-emine-rizaoglu-mehtap-yalcinkaya-ozgur-gultekin-kitabi-224924-9786254492068-1"
+    "link": "https://www.alfakitap.com/kuantum-mekanigi-emine-rizaoglu-mehtap-yalcinkaya-ozgur-gultekin-kitabi-224924-9786254492068-1",
+    "description": "Bu kitap, kuantum mekaniğinin temel konularını ve gelişimini ele alıyor. İlk sekiz bölümde dalga mekaniğinin temelleri, klasik fiziğin yetersiz kaldığı alanlara getirdiği açıklamalar ve zenginleştirilmesi tartışılıyor. Devam eden üç bölümde matris mekaniği, Dirac denklemi ve kuantize alanlar kuramına giriş yapılıyor. Son bölümde, ikinci kuantum devriminin temelini oluşturan EPR makalesi ve Schrödinger'in dolaşıklık olgusu gibi konular ele alınıyor. Ayrıca, dekoherens, kuantum mekaniğinin farklı yorumları ve PBR teoremi gibi güncel ve felsefi tartışmalara yer veriliyor. Kitap, kuantum mekaniğinin klasik limitini anlamak ve teknolojik ilerlemeler için gerekli olan teorik temelleri vurguluyor."
   },
   {
     "image": "https://www.alfakitap.com/media/catalog/product/cache/7aaa48ea9734ca445e6a222a3fe7d59a/1/7/177146_9786051714615_56068.jpg",
     "title": "Kuantum Mekaniği",
     "author": "Art Friedman, Leonard Susskind",
-    "link": "https://www.alfakitap.com/kuantum-mekanigi-art-friedman-leonard-susskind-kitabi-177146-9786051714615-1"
+    "link": "https://www.alfakitap.com/kuantum-mekanigi-art-friedman-leonard-susskind-kitabi-177146-9786051714615-1",
+    "description": "Kitap, evrenimizde en temelde kuantum davranışının var olduğunu, evrenimizin sadece ve sadece kuantum yasaları uyarınca işlediğini, klasik mekaniğin ancak bir yaklaştırma olduğunu vurguluyor. Bu bağlamda, kuantum durumlarının ilkelerini, belirsizlik ve zamana bağlılığı, dolanıklık olgusunu, parçacık ve dalga ikiliğini en şeffaf biçimde ortaya seriyor. “Bu tam manasıyla bir kuantum mekaniği kitabıdır... Fizikçilerin dünyayı gerçekten nasıl düşündüklerini anlamak istiyorsanız, bu kitaptan başlamanız gerekir.”"
   },
   {
     "image": "https://img.kitapyurdu.com/v1/getImage/fn:6593941/wh:true/wi:220",
     "title": "Kuantum Felsefesi",
     "author": "Roland Omnes",
-    "link": "https://www.kitapyurdu.com/kitap/kuantum-felsefesi/416874.html"
+    "link": "https://www.kitapyurdu.com/kitap/kuantum-felsefesi/416874.html",
+    "description": "Kitap, antik felsefeden günümüze kadar gelen felsefe öğretilerinin özetini vererek, kuantum fiziğinin felsefeye getirdiği yeni yaklaşım üzerine yoğunlaşıyor. Omnès ayrıca Kuhn ve Feyerabend eleştirisi bağlamında bir fizikçi gözüyle bilim nedir sorusunu da irdeleniyor."
   }
 ]

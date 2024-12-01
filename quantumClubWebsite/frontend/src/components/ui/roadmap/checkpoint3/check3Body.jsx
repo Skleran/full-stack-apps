@@ -211,14 +211,17 @@ const check3Body = () => {
                   </DrawerTrigger>
                   <DrawerContent>
                     <div className="mx-auto h-[400px] w-full max-w-[500px]">
-                      <DrawerHeader>
-                        <div className="flex flex-col gap-2">
+                      <DrawerHeader className="flex h-full flex-col">
+                        <div className="flex h-fit flex-col gap-2">
                           <DrawerTitle>{content.title}</DrawerTitle>
                           <DrawerTitle className="text-neutral-400">
                             {content.author}
                           </DrawerTitle>
                         </div>
-                        <DrawerDescription>
+                        <DrawerDescription className="flex h-[82%] flex-shrink-0 flex-col">
+                          <div className="mx-4 mt-2 h-full leading-6">
+                            {content.description}
+                          </div>
                           <a
                             href={content.link}
                             className="flex w-full justify-center"

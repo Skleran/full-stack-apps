@@ -203,9 +203,7 @@ const check3BodyDesktop = () => {
                       >
                         {content.preface}
                         <a href={content.link}>
-                          <Button className="px-16 py-2 font-bold">
-                            Makaleye Git
-                          </Button>
+                          <Button className="px-16 py-2">Makaleye Git</Button>
                         </a>
                       </DialogDescription>
                       <DialogClose className="rounded-lg text-zinc-800 dark:text-zinc-50" />
@@ -275,7 +273,7 @@ const check3BodyDesktop = () => {
                         />
                       </div>
 
-                      <div className="scrollable-container scroll-x w-auto overflow-y-scroll p-4">
+                      <div className="w-auto p-4">
                         <DialogTitle className="mr-4 pb-2 text-2xl font-bold 2xl:pb-4">
                           {content.title}
                           <p className="text-xl text-neutral-500 dark:text-neutral-400">
@@ -294,13 +292,18 @@ const check3BodyDesktop = () => {
                             animate: { opacity: 1, scale: 1, y: 0 },
                             exit: { opacity: 0, scale: 0.8, y: 100 },
                           }}
-                          className="text-zinc-700 dark:text-zinc-300"
+                          className="flex h-[80%] flex-shrink-0 flex-col items-center justify-center"
                         >
-                          {content.description}
-                          <h1 className="my-2 mt-4 text-lg font-semibold text-neutral-500 dark:text-neutral-400">
-                            {/* Neden Okunmalı? */}
-                          </h1>
-                          <p>{content.whyToWatch}</p>
+                          <div className="custom-scrollbar scroll-x mb-4 h-full overflow-hidden overflow-y-scroll leading-7 text-zinc-700 dark:text-zinc-300">
+                            {content.description}
+                            {content.description}
+                          </div>
+
+                          <a href={content.link} className="w-[70%]">
+                            <Button className="w-full px-16 py-2">
+                              Kitaba Git
+                            </Button>
+                          </a>
                         </DialogDescription>
                       </div>
                       <DialogClose className="text-zinc-800 dark:text-zinc-50" />
